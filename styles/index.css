@@ -1,0 +1,47 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #6190e8, #a7bfe8);
+}
+
+.container {
+    text-decoration: none;
+    text-align: center;
+}
+
+#link-list {
+    display: inline-block;
+    text-align: left;
+}
+
+#main-heading {
+    font-size: xxx-large;
+}
+
+ul > li > a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    color: #030302;
+    line-height: 2;
+}
+
+ul > li > a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f3f3f3;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+ul > li > a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

@@ -1,0 +1,23 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #6190e8, #a7bfe8);
+}
+
+.container  > .center {
+    text-align: center;
+}
+
+.link {
+    display: table;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.link:hover {
+    transition: 0.3s;
+    color: gold;
+}
